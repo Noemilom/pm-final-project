@@ -1,17 +1,32 @@
-# Hypothesis & Success Metrics
+# Hypothesis & Success Metrics (Module 3)
 
-> **Module 3 · ★ Deliverable 3.** Repo file `03-analytics/hypothesis-and-metrics.md` — part of your submission.
-> Do the lab in the **Module 3 · Exercise Guide** (linked from the Module 3 deck), then click **⬇ Download .md** — it saves as this exact file. Commit it here.
-> It feeds the **Problem, Value & Hypothesis** slide of your Module 6 final deck.
+## Pre-work · Hypothesis check
+- **Role , who you are solving for (from M2):** The Loyal Scroller: a long-term, heavy viewer who opens the app out of habit most evenings.
+- **Goal , what this user is ultimately trying to achieve:** Find something she'll enjoy tonight without spending her evening searching for it
+- **Friction / moment of misery , the specific pain blocking their goal:** She scrolls for twenty minutes through 15,000 titles and closes the app without watching anything
+- **Current workaround , the external tool or manual process they rely on (M2):** Her personal DVD collection
+- **Problem Hook , your one-sentence framing of the business crisis (M1):** We must stop losing our best users by helping them find what's worth watching on StreamLine
+- **Value Proposition , the outcome your initiative promised to deliver (M1):** Spotlight turns StreamLine from a place where you search into a place where you discover
 
-## Finalized product hypothesis
+## Read your data snapshots
+- **Does the funnel data confirm your M2 friction point, or does it tell a different story? Note where the numbers align with the qualitative pain you found and where they diverge.:** It aligns, 71% of visitors browse, but only 29% start playing. That means 42 of every 100 visitors browse and leave without pressing play. Also, "content searched then played" fell from 41% to 34%, which matches the finding that search only works for exact titles
+- **Do the retention patterns align with the workaround your M2 persona used to find content? Note what the Mo. 0→1 drop suggests about the onboarding experience your persona described as frustrating.:** Yes, it lines up. Priya falls back on her DVDs because they're a small set of films she already trusts, and Spotlight is basically that shelf inside the app. After 1 month: 74 to 79% are still subscribed, against 63 to 68% without Spotlight. After 3 months: 52% are still subscribed, against 39 to 34% without Spotlight.
 
-> Based on [qual + quant evidence], I believe that [solving X] for [persona] will result in [outcome], as measured by a [X%] change in [success metric]. I will protect [guardrail metric] and make a go/no-go decision after [decision window].
+The numbers back this up. People who joined after Spotlight launched stick around much better than people who only had the full catalogue.
+- **Does the LTV gap and the content mix (61% trending for Wanderers) confirm the moment of misery your persona described? Note which segment your persona is in and whether the data confirms their pain.:** Yes, the data confirms the problem, but in a different group than I expected. My persona fits the Power Users (4.8 sessions a week), and they're already doing fine: they're worth the most ($14.20 a month), mostly watch curated content and rarely cancel. So my Module 1 hook was aimed at the users we're least likely to lose.
 
-## Success metrics
+The real pain is with the Wanderers, the biggest group (41%). They open the app about once a week, watch mostly whatever's trending (61%) and are worth the least ($8.40). Wanderers behave just like Priya: they open the app without knowing what to watch, and they either pick whatever's trending or leave. Spotlight helps them the most: fewer of them cancel when they use it (22 points less than those who don't). That's why I'd focus on Wanderers first
+- **Does the low adoption confirm your persona is burdened by tools they don’t use? Note whether the low scheduling adoption (42%) for coordinators matches your M2 moment of misery.:** _(not filled in)_
+- **Does the workflow data match the manual process or hack you documented in M2? Note whether the specific drop-offs or time gaps explain why your persona avoids the digital tool.:** _(not filled in)_
+- **Look at the CSAT heatmap. Which specific cell most directly maps to your persona’s friction? Note how the NPS trend justifies the urgency of your M1 Problem Hook.:** _(not filled in)_
 
-| Metric | Type | Target | Why it matters |
-|---|---|---|---|
-| _North-star_ | | _____ | _____ |
-| _Leading indicator_ | | _____ | _____ |
-| _Guardrail_ | | _____ | _____ |
+## Step 3 · Craft your hypothesis
+- **Qualitative evidence (from M2) , quote the specific friction / moment of misery for your persona:** I open the app, scroll for like twenty minutes, and close it without watching anything. There's 15,000 titles but nothing I actually want. I ended up going back to a DVD
+- **Quantitative evidence (from M3) , name the metric or data point that confirms the pain; cite the number:** Only 29% of visitors start playing something, and only 11% watch for more than 30 minutes (down from 19%). Wanderers are 41% of users, 61% of what they watch is trending content, and they're worth the least ($8.40 a month). Spotlight cuts their churn by 22 points.
+- **Persona , role, goal, and the friction you confirmed in the reconciliation steps:** The Wanderer: opens StreamLine about once a week without a plan. She wants to find something good to watch tonight, quickly. Her friction is that she can't tell the app what kind of evening she wants, and its recommendations don't really know her, so she picks whatever's trending or leaves without watching.
+- **Problem you are solving , one sentence describing the specific friction this initiative removes:** Wanderers can't quickly find something they trust to watch, so most of their visits end with nothing watched.
+- **Strategic outcome , what behaviour change do you expect, and how does it map to retention / revenue / churn?:** Wanderers find and finish something they like through Spotlight, so they come back more often and cancel less.
+- **Primary success metric (initiative signal) , the leading indicator that tells you the gap is closing:** % of Wanderer sessions with 30+ minutes of watching.
+- **Guardrail metric (product signal) , the metric that must NOT drop; it protects your existing base:** Power Users' weekly sessions (4.8) and their churn must not get worse by more than 5%. They're our most valuable users, and Spotlight must not disrupt them
+- **Decision window , how much time or data before you scale, pivot, or kill? minimum threshold to proceed?:** An 8-week A/B test on Wanderers, followed by a check of 1-month retention. Scale if 30+ min sessions go up by at least 4 points with Power Users unaffected.
+- **Draft your full hypothesis sentence , one to three sentences; quote the metric, name the persona, name the outcome:** Users tell us they scroll for twenty minutes and leave without watching, and the data shows 71% of visitors never press play, while Wanderers (41% of users) mostly watch whatever's trending. Based on this, I believe that giving Wanderers a short, mood-based, curated way to choose will help them find something they enjoy and cancel less, measured by a 4-point increase in Wanderer sessions with 30+ minutes of watching (from an 11% baseline). I will protect Power Users' weekly sessions and churn, and decide go/no-go after an 8-week A/B test plus a 1-month retention check.
